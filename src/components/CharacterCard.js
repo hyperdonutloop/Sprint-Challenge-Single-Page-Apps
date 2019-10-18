@@ -4,6 +4,7 @@ export default function CharacterCard(props) {
 
 
   return (
+    
     <div className="character-card">
       <div className="character-list">
         <h2>Name: {props.name}</h2>
