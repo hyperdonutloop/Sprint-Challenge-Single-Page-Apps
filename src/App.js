@@ -1,11 +1,17 @@
 import React from "react";
-import Header from "./components/Header.js";
+import CharacterList from "./components/CharacterList.js";
+import { Route } from "react-router-dom";
+import Navigation from "./components/Navigation.js";
+import WelcomePage from "./components/WelcomePage.js";
+
 
 
 export default function App() {
   return (
-    <main>
-      <Header />
-    </main>
+    <div>
+      <Navigation />
+      <Route exact path="/" component={WelcomePage} />
+      <Route path="/CharacterList" component={CharacterList} />
+    </div>
   );
 }
